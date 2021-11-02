@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Hasty.db',
   tagline: 'A speedy little database tool',
-  url: 'https://hasty.js.org',
-  baseUrl: '/',
+  url: 'https://cactivenetwork.github.io/',
+  baseUrl: '/hasty/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
