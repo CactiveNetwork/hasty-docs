@@ -1,0 +1,36 @@
+---
+sidebar_position: 3
+id: clear
+description: Hasty clear method
+---
+
+# Clear method
+
+> **&lt;Hasty&gt;**.**add**(options?)
+
+## Usage
+
+---
+
+Deletes all data held within a database.
+
+## Example
+
+---
+
+```js title="clear.js"
+// Avoid subpoena's 2.0
+<Hasty>.set('crimes', [ 'conspiracy to commit murder', + 1000 more ])
+<Hasty>.clear() // 1001
+```
+
+## Parameters
+
+| Name    | Description                | Type                                       | Required |
+| ------- | -------------------------- | ------------------------------------------ | -------- |
+| Options | Additional method options. | [MethodOptions](/docs/types/method-options) | false    |
+
+## Return Type
+
+&ltHasty&gt.clear() returns the amount of rows deleted.
+See [example](#example).

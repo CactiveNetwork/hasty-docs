@@ -1,0 +1,43 @@
+---
+sidebar_position: 6
+id: has
+description: Hasty has method
+---
+
+# Has Method
+
+> **&lt;Hasty&gt;**.**has**(key, options?)
+
+<br />
+
+:::note Note
+If the value is undefined, this will return true
+:::
+
+## Usage
+
+---
+
+Returns whether the specified key exists in the database.
+
+## Example
+
+---
+
+```js title="has.js"
+// Returns whether an employee exists in the organization
+<Hasty>.set('employees.dave', { name: 'Dave', description: 'I think they work here...' })
+<Hasty>.has('employees.dave') // true
+```
+
+## Parameters
+
+| Name    | Description                        | Type                                                                                              | Required |
+| ------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Key     | Key to check, allows dot notation. | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
+| Options | Additional method options.         | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.has() returns a boolean dependent on whether a value at the key exists.
+See [example](#example).

@@ -1,0 +1,37 @@
+---
+sidebar_position: 9
+id: type
+description: Hasty type method
+---
+
+# Type method
+
+> **&lt;Hasty&gt;**.**type**(key, options?)
+
+## Usage
+
+---
+
+Gets the type of the value at the specified key
+
+## Example
+
+---
+
+```js title="type.js"
+// Paranoia
+<Hasty>.set('MUST_BE_TRUE', true)
+<Hasty>.type('MUSE_BE_TRUE') // true
+```
+
+## Parameters
+
+| Name    | Description                        | Type                                                                                              | Required |
+| ------- | ---------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Key     | Key to check, allows dot notation. | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
+| Options | Additional method options.         | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.type() returns the typeof the value at the key.
+See [example](#example).

@@ -1,0 +1,37 @@
+---
+sidebar_position: 8
+id: set
+description: Hasty set method
+---
+
+# Set method
+
+> **&lt;Hasty&gt;**.**set**(key, value, options?)
+
+## Usage
+
+---
+
+Sets the value of a key in the database.
+
+## Example
+
+---
+
+```js title="set.js"
+// Set the starting wage of employees
+<Hasty>.set('wages.software_developers', 100000000)
+```
+
+## Parameters
+
+| Name    | Description                      | Type                                                                                              | Required |
+| ------- | -------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Key     | Key to set, allows dot notation. | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
+| Value   | New value.                       | any                                                                                               | true     |
+| Options | Additional method options.       | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.set() returns the new value of the provided key.
+See [example](#example).

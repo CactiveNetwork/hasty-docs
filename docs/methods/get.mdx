@@ -1,0 +1,37 @@
+---
+sidebar_position: 5
+id: get
+description: Hasty get method
+---
+
+# Get method
+
+> **&lt;Hasty&gt;**.**get**(key, options?)
+
+## Usage
+
+---
+
+Fetches the value of a key in the database.
+
+## Example
+
+---
+
+```js title="get.js"
+// Get the number of stars a product has
+<Hasty>.set('products.painkillers.stars', 150)
+<Hasty>.get('products.painkillers.stars') // 150
+```
+
+## Parameters
+
+| Name    | Description                      | Type                                                                                              | Required |
+| ------- | -------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Key     | Key to get, allows dot notation. | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
+| Options | Additional method options.       | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.get() returns the value set at the key, or null.
+See [example](#example).

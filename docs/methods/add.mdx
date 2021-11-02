@@ -1,0 +1,38 @@
+---
+sidebar_position: 1
+id: add
+description: Hasty add method
+---
+
+# Add method
+
+> **&lt;Hasty&gt;**.**add**(key, value, options?)
+
+## Usage
+
+---
+
+Adds a number to a key in the database. Key defaults to 0 if none exists.
+
+## Example
+
+---
+
+```js title="add.js"
+// Adds one to the store's sale count.
+<Hasty>.set('store.sales_count', 25)
+<Hasty>.add('store.sales_count', 1) // 26
+```
+
+## Parameters
+
+| Name    | Description                      | Type                                                                                              | Required |
+| ------- | -------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Key     | Key to set, allows dot notation. | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
+| Value   | Amount to add to current.        | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | true     |
+| Options | Additional method options.      | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.add() returns the new value of the provided key.
+See [example](#example).

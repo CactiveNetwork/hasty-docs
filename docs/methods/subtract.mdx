@@ -1,0 +1,44 @@
+---
+sidebar_position: 8
+id: subtract
+description: Hasty subtract method
+---
+
+# Subtract method
+
+> **&lt;Hasty&gt;**.**subtract**(key, value, options?)
+
+<br />
+
+:::note Note
+This function calls [`add()`](/docs/methods/add) with a negated value
+:::
+
+## Usage
+
+---
+
+Subtracts a number from a key in the database. Key defaults to 0 if none exists.
+
+## Example
+
+---
+
+```js title="subtract.js"
+// Subtracts one from the amount of 'cookie' inventory
+<Hasty>.set('store.inventory.cookie_count', 10)
+<Hasty>.subtract('store.inventory.cookie_count', 1) // 9
+```
+
+## Parameters
+
+| Name    | Description                      | Type                                                                                              | Required |
+| ------- | -------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Key     | Key to set, allows dot notation. | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
+| Value   | Amount to subtract from current  | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | true     |
+| Options | Additional method options.       | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.subtract() returns the new value of the provided key.
+See [example](#example).

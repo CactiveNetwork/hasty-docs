@@ -1,0 +1,38 @@
+---
+sidebar_position: 7
+id: push
+description: Hasty push method
+---
+
+# Push method
+
+> **&lt;Hasty&gt;**.**push**(key, value, options?)
+
+## Usage
+
+---
+
+Appends the value to the current array value.
+
+## Example
+
+---
+
+```js title="push.js"
+// Append a hitlist
+<Hasty>.set('hitlist.members', ['the queen of england'])
+<Hasty>.push('hitlist.members', 'greg') // ['the queen of england', 'greg']
+```
+
+## Parameters
+
+| Name    | Description                         | Type                                                                                              | Required |
+| ------- | ----------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Key     | Key to modify, allows dot notation. | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | true     |
+| Value   | Value to append.                    | any                                                                                               | true     |
+| Options | Additional method options.          | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.push() returns the new value of the key.
+See [example](#example).

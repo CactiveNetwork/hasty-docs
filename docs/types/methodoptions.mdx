@@ -1,0 +1,30 @@
+---
+sidebar_position: 1
+id: method-options
+description: Hasty MethodOptions
+---
+
+# MethodOptions
+
+> More accurately ArbitrateMethodParameters, MethodOptions is a much easier name for me to use in docs.
+
+---
+
+## Fields
+
+| Name    | Description           | Type                                                                                              | Required |
+| ------- | --------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| id      | Row id to modify.     | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | false    |
+| options | Actual MethodOptions. | [MethodOptionsOptions](#methodoptionsoptions)                                                     | false    |
+| data    | Data to set.          | any                                                                                               | false    |
+
+## MethodOptionsOptions
+> I think im loosing out on the simplicity here...
+
+Fields for MethodOptions[Options]
+
+| Name     | Description                        | Type                                                                                                | Required |
+| -------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- | -------- |
+| table    | Table being targetted.             | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | false    |
+| target   | Sub-key target.                    | [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | false    |
+| sub_keys | Whether or not to enable sub-keys. | [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | false    |

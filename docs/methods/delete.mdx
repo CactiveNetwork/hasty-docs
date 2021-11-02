@@ -1,0 +1,37 @@
+---
+sidebar_position: 4
+id: delete
+description: Hasty delete method
+---
+
+# Delete method
+
+> **&lt;Hasty&gt;**.**delete**(key, options?)
+
+## Usage
+
+---
+
+Key to delete, allows dot notation.
+
+## Example
+
+---
+
+```js title="delete.js"
+// Avoid subpoena's
+<Hasty>.set('illegal_content.tax_fraud', [...])
+<Hasty>.delete('illegal_content.tax_fraud') // true
+```
+
+## Parameters
+
+| Name    | Description                         | Type                                                                                              | Required |
+| ------- | ----------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| Value   | Key to delete, allows dot notation. | [number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) | true     |
+| Options | Additional method options.          | [MethodOptions](/docs/types/method-options)                                                        | false    |
+
+## Return Type
+
+&ltHasty&gt.delete() whether the deletion was successful.
+See [example](#example).

@@ -1,0 +1,36 @@
+---
+sidebar_position: 2
+id: all
+description: Hasty all method
+---
+
+# All method
+
+> **&lt;Hasty&gt;**.**all**(options?)
+
+## Usage
+
+---
+
+Lists all data stored within a database.
+
+## Example
+
+---
+
+```js title="all.js"
+// Check out the alphabet
+<Hasty>.set('the_alphabet', 'abcdefghijklmnopqrstuvwxyz')
+<Hasty>.all() // [ { ID: 'the_alphabet', data: 'abcdefghijklmnopqrstuvwxyz } ]
+```
+
+## Parameters
+
+| Name    | Description                | Type                                       | Required |
+| ------- | -------------------------- | ------------------------------------------ | -------- |
+| Options | Additional method options. | [MethodOptions](/docs/types/method-options) | false    |
+
+## Return Type
+
+&ltHasty&gt.all() returns an `{ Id: any, data: any }[]`.
+See [example](#example).
